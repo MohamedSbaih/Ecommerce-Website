@@ -92,6 +92,7 @@ body {
     left:0;
 
 }
+/********* NAVBAR ***********/
 
 #navbar {
     display:flex;
@@ -127,6 +128,7 @@ body {
 }
 
 /******* HERO PAGE ***************/
+/*******FIRST SECTION *********/
 #hero {
     background-image: var(--background-hero-img);
     height:90vh;
@@ -164,6 +166,7 @@ body {
     flex-wrap: wrap;
 }
 
+/******* SECOND SECTION ***********/
 
 #feature .fe-box{
     width:11.2rem;
@@ -206,5 +209,76 @@ body {
 }
 #feature .fe-box:nth-child(6) h6{
     background-color: #fff2e5;
+}
+
+/********** THIRD SECTION ************/
+#product1 {
+    text-align:center;
+}
+#product1 .pro-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding-top: 1.2rem;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width:15.6rem;
+    padding: .6rem .7rem;
+    border: 1px solid var(--border-box);
+    border-radius:1.4rem;
+    cursor: pointer;
+    box-shadow: 1.2rem 1.2rem 2.2rem rgba(0,0,0,0.02) ;
+    margin: .9rem 0;
+    transition: .2s ease;
+    position: relative;
+}
+#product1 .pro img{
+    width:100%;
+    border-radius: 1.2rem;
+}
+
+#product1 .pro:hover{
+    box-shadow: 1.2rem 1.2rem 2.2rem rgba(0,0,0,0.06);
+    transform: scale(1.1);
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color:#606063;
+    font-size:12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: var(--color-navbar-list);
+    font-size:14px;
+}
+#product1 .pro .des .star span{
+    font-size: 1rem;
+    color:rgb(243,181,25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size:1rem;
+    font-weight:700;
+    color:var( --color-navbar-hover);
+}
+#product1 .pro .cart{
+    width:2.5rem;
+    height:2.5rem;
+    line-height: 2.5rem;
+    border-radius:3.2rem;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color:var( --color-navbar-hover);
+    border: 1px solid var(--border-box);
+    position: absolute;
+    bottom:1.2rem;
+    right:.6rem;
 }
 
