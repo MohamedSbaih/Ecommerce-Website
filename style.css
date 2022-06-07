@@ -18,7 +18,7 @@
     --color-navbar-list: #1a1a1a;
     --color-navbar-hover:#088178;
     --color-dark: #222;
-    --color-light: rgba(0 0 0 / 6%);
+    --color-light: rgba(0, 0, 0, 0.06);
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
@@ -63,7 +63,7 @@ h6{
 
 p{
     font-size:16px;
-    color:var(--color-light);
+    color:var(--color-dark-variant);
     margin: 15px 0 20px 0;
 }
 
