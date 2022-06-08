@@ -14,7 +14,7 @@
     --color-warning:#ffbb55;
     --color-white: #fff;
     --color-navbar: #e3e6f3;
-    --color-info-dark:#7d8da1;
+    --color-info-dark:#818ea0;
     --color-navbar-list: #1a1a1a;
     --color-navbar-hover:#088178;
     --color-dark: #222;
@@ -53,7 +53,7 @@ h2{
 
 h4{
     font-size:20px;
-    color:var(--color-dark);
+    color:var(--color-dark-variant);
 }
 
 h6{
@@ -425,4 +425,53 @@ body {
 }
 #banner3 .banner-box:hover{
     transform:scale(1.1);
+}
+
+/******* News Letter *************/
+#newsletter{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    background-image: url(../images/banner/b14.png);
+    background-repeat:no-repeat;
+    background-position: 20% 30%;
+    background-color: var( --color-dark);
+}
+#newsletter h4{
+    font-size:1.2rem;
+    font-weight: 700;
+    color:var(--color-info-dark);
+}
+#newsletter p{
+    font-size:.9rem;
+    font-weight: 600;
+    color:var(--color-info-dark);
+}
+#newsletter p span{
+    color:var(--color-warning);
+}
+#newsletter .form{
+    display:flex;
+    width:40%;
+}
+
+#newsletter input{
+    height:3.125rem;
+    padding: 0 1.25rem;
+    font-size:.9rem;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius:4px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color:var( --color-navbar-hover);
+    color: var( --color-white);
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
 }
