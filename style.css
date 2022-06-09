@@ -34,9 +34,9 @@
     --box-shadow: 0 5px 15px var(--color-light);
     --border-box:#cce7d0;
 
-    --background-hero-img: url(../images/hero4.png);
+    --background-hero-img: url(./images/hero4.png);
     --background-btn-img:url(../images/button.png);
-    --background-banner-img:url(../images/banner/b2.jpg);    
+    --background-banner-img:url(./images/banner/b2.jpg);    
 }
 
 h1{
