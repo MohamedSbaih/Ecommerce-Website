@@ -34,9 +34,9 @@
     --box-shadow: 0 5px 15px var(--color-light);
     --border-box:#cce7d0;
 
-    --background-hero-img: url(./images/hero4.png);
-    --background-btn-img:url(../images/button.png);
-    --background-banner-img:url(./images/banner/b2.jpg);    
+    --background-hero-img: url(images/hero4.png);
+    --background-btn-img:url(images/button.png);
+    --background-banner-img:url(images/banner/b2.jpg);    
 }
 
 h1{
@@ -345,7 +345,7 @@ body {
     flex-wrap: wrap;
 }
 #sm-banner .banner-box {
-    background-image: url(../images/banner/b17.jpg);
+    background-image: url(images/banner/b17.jpg);
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -358,7 +358,7 @@ body {
     transition: .5s ease;
 }
 #sm-banner .banner-box2{
-    background-image: url(../images/banner/b10.jpg);
+    background-image: url(images/banner/b10.jpg);
 
 }
 #sm-banner h4{
@@ -394,7 +394,7 @@ body {
     padding:0 5rem;
 }
 #banner3 .banner-box {
-    background-image: url(../images/banner/b7.jpg);
+    background-image: url(images/banner/b7.jpg);
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -408,10 +408,10 @@ body {
     transition: .5s ease;
 }
 #banner3 .banner-box2{
-    background-image: url(../images/banner/b4.jpg);
+    background-image: url(images/banner/b4.jpg);
 }
 #banner3 .banner-box3{
-    background-image: url(../images/banner/b18.jpg);
+    background-image: url(images/banner/b18.jpg);
 }
 #banner3 h2{
     color:var(--color-white);
@@ -433,7 +433,7 @@ body {
     justify-content:space-between;
     flex-wrap: wrap;
     align-items:center;
-    background-image: url(../images/banner/b14.png);
+    background-image: url(images/banner/b14.png);
     background-repeat:no-repeat;
     background-position: 20% 30%;
     background-color: var( --color-dark);
