@@ -103,6 +103,9 @@ button.white {
 body {
     width: 100%;
 }
+#close-btn{
+    display:none;
+}
 
 /**** HEADER START **********/
 #header {
@@ -130,6 +133,7 @@ body {
     padding: 0 1.5rem;
     position :relative;
 }
+
 #navbar li a{
     text-decoration: none;
     font-size: 1rem;
@@ -152,6 +156,9 @@ body {
     bottom: -4px;
     left:20px;
 }
+.mobile{
+    display:none;
+}
 
 /******* HERO PAGE ***************/
 /*******FIRST SECTION *********/
@@ -159,6 +166,7 @@ body {
     background-image: var(--background-hero-img);
     height:90vh;
     width:100%;
+    background-size: cover; ;
     background-position: top 25% right 0;
     padding: 0 5rem;
     display: flex;
@@ -430,6 +438,7 @@ body {
 /******* News Letter *************/
 #newsletter{
     display:flex;
+    padding-top:2rem;
     justify-content:space-between;
     flex-wrap: wrap;
     align-items:center;
@@ -529,3 +538,149 @@ footer .copyright{
     width:100%;
     text-align:center;
 }
+
+/******** RESPONSIVE ***********/
+@media(max-width:799px){
+    .section-p1{
+        padding:2.5rem 2.5rem;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position:fixed;
+        top:0;
+        right:-300px;
+        height:100vh;
+        width:15rem;
+        background-color: #e3e6f3;
+        box-shadow:0  2.5rem 3.7rem rgba(0, 0, 0, 0.1);
+        padding:5rem 0 0 .6rem;
+        transition: all 0.7s ease;
+    }
+    #navbar.active{
+        right: 0;
+    }
+
+    #navbar li{
+        margin: 1.5rem;
+    }
+    #navbar li:hover a{
+        margin-left:.8em;
+    }
+    #lg-bag{
+        display: none;
+    }
+    .mobile{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile i,
+    .mobile span{
+        cursor: pointer;
+        color:var(--color-navbar-list);
+        font-size: 1.4rem;
+        padding-left:1.2rem;
+    }
+    #close-btn{
+        display: initial;
+        position:absolute;
+        top: 2rem;
+        left:3rem;
+        color:var(--color-dark);
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    #hero{
+        height:70vh;
+        padding:0 3rem;
+        background-position: top 30% right 70%;
+    }
+    #feature{
+       justify-content:center;
+    }
+    #feature .fe-box{
+        margin:1rem 1rem;
+    }
+    #product1 .pro-container{
+        justify-content:center;
+    }
+    #product1 .pro {
+        margin:1rem;
+    }
+    #banner{
+        height:25vh;
+    }
+    #sm-banner .banner-box{
+        min-width: 100%;
+        height:30vh;
+
+    }
+    #banner3{
+        padding:0 2.5rem;
+    }
+    #banner3 .banner-box{
+        width:20%;
+    }
+    #newsletter .form{
+        width:70%;
+    }
+    
+    }
+    
+    /********* MOBILE RESPONSIVE **********/
+    @media(max-width:477px){
+        .section-p1{
+            padding:1.2rem;
+        }
+        #header{
+            padding: 10px 30px;
+        }
+        h1{
+            font-size:2.4rem;
+        }
+        h2{
+            font-size:2rem
+        }
+        #hero{
+            padding: 0px 20px;
+            background-position: 55%;
+        }
+        #feature{
+            justify-content:space-between;
+        }
+
+        #feature .fe-box{
+            width:9.6rem;
+            margin: 0 0 .9rem 0;
+        }
+        #product1 .pro{
+            width:100%;
+        }
+        #banner{
+            height:40vh;
+        }
+        #sm-banner .banner-box{
+            height: 40vh;
+        }
+        #sm-banner .banner-box2{
+            margin-top:1.2rem;
+        }
+        #banner3{
+            padding:0 1.2rem;
+        }
+        #banner3 .banner-box{
+            width:100%;
+        }
+        #newsletter {
+           padding:2.5rem 1.2rem;
+        }
+        #newsletter .form{
+            width:100%;
+        }
+        footer .copyright{
+            text-align:start;
+        }
+    }
