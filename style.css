@@ -699,5 +699,24 @@ footer .copyright{
 
     #page-header h2,
     #page-header p{
-        color: #fff;
+        color: var(--color-white);
+    }
+
+    #pagination {
+        text-align:center;
+
+    }
+    #pagination a{
+        text-decoration: none;
+        background-color: var(--color-navbar-hover);
+        padding: 15px 20px;
+        border-radius:4px;
+        color: var(--color-white);    
+        font-weight: 600;
+        
+    }
+
+     .arrow{
+        font-size:1rem;
+        font-weight:600;
     }
